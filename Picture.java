@@ -70,8 +70,34 @@ public class Picture
         moon.changeSize(50);
         moon.makeVisible();
         
+        
     }
-
+        
+    public void amanecer()
+     { 
+        roof.makeVisible();
+        
+        wall.makeVisible();
+        
+        ground.makeVisible();
+        
+        window.makeVisible();
+        
+        moon.moveHorizontal(-200);
+        moon.moveVertical(40);
+        moon.changeSize(50);
+        moon.makeVisible(); 
+        
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(260);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical(-300);
+        
+    }
+        
     /**
      * Change this picture to black/white display
      */
